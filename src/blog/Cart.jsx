@@ -49,26 +49,30 @@
 
 
 
+import './cart.css'
 
 
 
-import PropTypes from 'prop-types';
+const Cart = ({posts}) => {
+    
 
-
-
-const Cart = ({blog}) => {
-
-if(!blog)return<p>Loading...</p>;
+//
   
-
-  
-    const {name,img,country,role,batting_style,price,rating}= blog;
+    const {name,img,country,role,batting_style,price,rating}= posts;
+    
+    
+   
+    
     return (
         <>
+
+
+
+       
    <section className=' '>   
-       <div className=" card bg-base-100    shadow-xl ">
+       <div className=" card  bg-base-100  shadow-xl cart ">
   <figure>
-  <img src={img} alt={`hi${name}`} />
+  <img className=' w-96 h-64' src={img} alt={`hi${name}`} />
    
   </figure>
   <div className="card-body ">
@@ -95,10 +99,6 @@ if(!blog)return<p>Loading...</p>;
 </>
     );
 };
-
-    Cart.propTypes={
-        blog: PropTypes.object.isRequired
-    }
 
 
 export default Cart;

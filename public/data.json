@@ -13,8 +13,8 @@
       },
       {
         "id":2,
-        "name": "Shawn Tendu",
-        "img":"https://i.ibb.co.com/8xpHHyk/images-1.jpg",
+        "name": "Avishek Roy",
+        "img":"https://i.ibb.co.com/pfZRyr0/463908932-1572683633609299-7640672258794869138-n.jpg",
         "country": "India",
         "role": "Batsman",
         "batting_style": "Right-Hand Bat",
@@ -23,7 +23,7 @@
       },
       { "id":3,
         "name": "David Warrier",
-        "img":"https://i.ibb.co.com/8xpHHyk/images-1.jpg",
+        "img":"https://i.ibb.co.com/927mVC2/5218.webp",
         "country": "Australia",
         "role": "Batsman",
         "batting_style": "Left-Hand Bat",
@@ -33,7 +33,7 @@
       {
         "id":4,
         "name": "Chris Gale",
-        "img":"https://i.ibb.co.com/8xpHHyk/images-1.jpg",
+        "img":"https://i.ibb.co.com/wzrtZ6H/Whats-App-Image-2024-01-25-at-07-52-26.webp",
         "country": "West Indies",
         "role": "Batsman",
         "batting_style": "Left-Hand Bat",
@@ -42,9 +42,9 @@
       },
       {
         
-            "id":9,
+            "id":5,
             "name": "Glenn Maxxer",
-            "img":"https://i.ibb.co.com/8xpHHyk/images-1.jpg",
+            "img":"https://i.ibb.co.com/mvw8SGx/387986.webp",
             "country": "Australia",
             "role": "All-Rounder",
             "batting_style": "Right-Hand Bat",
@@ -55,7 +55,7 @@
       {
         "id":6,
         "name": "AB De Villan",
-        "img":"https://i.ibb.co.com/8xpHHyk/images-1.jpg",
+        "img":"https://i.ibb.co.com/M5QhL5D/810e26113671863-Y3-Jvc-Cwx-NTAw-LDEx-Nz-Ms-MCwx-Nj-M.png",
         "country": "South Africa",
         "role": "Batsman",
         "batting_style": "Right-Hand Bat",
@@ -65,7 +65,7 @@
       {
         "id":7,
         "name": "Ben Stroke",
-        "img":"https://i.ibb.co.com/8xpHHyk/images-1.jpg",
+        "img":"https://i.ibb.co.com/6WNQN0r/skysports-pa-ben-stokes-england-5805019.jpg",
         "country": "England",
         "role": "All-Rounder",
         "batting_style": "Left-Hand Bat",
@@ -74,8 +74,8 @@
       },
       {
         "id":9,
-        "name": "Glenn Maxxer",
-        "img":"https://i.ibb.co.com/8xpHHyk/images-1.jpg",
+        "name": "Liton das",
+        "img":"https://i.ibb.co.com/Bcpj8k6/797c3-15830758836732-800.jpg",
         "country": "Australia",
         "role": "All-Rounder",
         "batting_style": "Right-Hand Bat",
@@ -84,8 +84,8 @@
       },
       {
         "id":9,
-        "name": "Glenn Maxxer",
-        "img":"https://i.ibb.co.com/8xpHHyk/images-1.jpg",
+        "name": "Dhoni sing",
+        "img":"https://i.ibb.co.com/NVbhqTg/PTI04-03-2023-000319-B-0-1680592093818-1680592093818-1680592116744-1680592116744.jpg",
         "country": "Australia",
         "role": "All-Rounder",
         "batting_style": "Right-Hand Bat",

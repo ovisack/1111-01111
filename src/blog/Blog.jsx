@@ -1,54 +1,29 @@
 import { useEffect, useState } from "react";
-// import Blogs from "../Blogs/Blogs";
-import Cart from "../Status/cart";
-// import About from "../About/About";
+import Cart from "./cart";
+
 
 
 
 const Blog = () => {
+    const [post,setPost]= useState([]);
 
-
-    const [post, setPost]= useState([]);
-    
-
-
-useEffect(()=> {
-  fetch('/public/data.json')
-  .then(res=> res.json())
-  .then(data=>setPost(data))
-},[])
-
+    useEffect(()=>{
+        fetch("./data.json")
+        .then(res => res.json())
+        .then(data=>setPost(data))
+    },[])
     return (
-        <>
-        <h1>Available Players</h1>
-
-   
-        <div className=" md:grid md:grid-cols-3 mt-10 gap-14 ">
-
-
-
-
-
-       
-
-        {
-            
-            post.map(blog=><Cart key={blog.id} 
-               blog={blog}></Cart>)
-               
-       }
-
-
-
-
-            
+        <div className=" flex  ">
+            <h3>name:{post.length}</h3>
+      <div className="grid  md:grid-cols-3 md:gap-14 m-14 mt-28 ">
+            {
+                post.map(posts=> <Cart key={posts.id} posts={posts}></Cart>)
+            }
+            </div>
         </div>
-
-        </>
     );
 };
 
 export default Blog;
-
 
 

@@ -1,13 +1,12 @@
 
-import { useState } from 'react';
 import './hero.css'
-import Cart from '../Status/cart';
+// import Cart from '../blog/cart';
 import About from '../About/About';
-// import App from '../App';
-// import Blog from '../blog/Blog';
-// import Blogs from '../Blogs/Blogs';
+import { useState } from 'react';
+import Blog from '../blog/Blog';
 
-function Nave (){
+
+function Nave ({handleIsActiveStates}){
 
 
     const [isActive,setIsActive]=useState("cart")
@@ -21,6 +20,7 @@ const  Add=() =>{
 const handleIsActiveState =(status) =>{
     setIsActive(status)
 };
+
 
 
 
@@ -62,16 +62,18 @@ const handleIsActiveState =(status) =>{
 
 
 <div className="md:flex md:justify-end md:mt- gap-5">
-         <button onClick={()=>handleIsActiveState("cart")} className="btn  btn-ghost">Available</button>
-        <button onClick={()=>handleIsActiveState("about")} className="btn btn-active btn-ghost">Selected (0)</button>
+         <button onClick={()=>handleIsActiveState("cart")} className="btn bg-black  btn-ghost">Available</button>
+        <button onClick={()=>handleIsActiveState("about")} className="btn btn-active bg-black btn-ghost">Selected (0)</button>
         
      
-        </div>
+          </div>
 
-       {isActive.cart?<Cart></Cart>: <About></About>}
+<div className="flex" >{isActive==="cart"?<Blog></Blog>: <About></About>}</div>
+    
+
        
         
-
+   
 
 </>
         
@@ -87,6 +89,31 @@ const handleIsActiveState =(status) =>{
 
 
 export default Nave;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

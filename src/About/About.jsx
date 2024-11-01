@@ -6,7 +6,7 @@
 const About = () => {
     return (
         <div>
-          <h1>About.jsx</h1>  
+          <h1>ami tomake valo basfjsufgsssjhdfbflksdfuysdtkjsddnf <br/> lkhfuysdgfklsd"| kjbhfjhfgsdhfb shkjsgdf </h1>  
         </div>
     );
 };
