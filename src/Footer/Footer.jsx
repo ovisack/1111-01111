@@ -1,4 +1,4 @@
-import './footer.css'
+// import './footer.css'
 
 
 const Footer = () => {
@@ -6,6 +6,7 @@ const Footer = () => {
         <> 
    
         <div>
+         
       
         <footer className="footer bg-neutral text-neutral-content h-96  md:mt-52 p-32">
            

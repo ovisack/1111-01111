@@ -49,18 +49,22 @@
 
 
 
+// import { useState } from 'react';
 import './cart.css'
 
 
 
-const Cart = ({posts}) => {
-    
+const Cart = ({posts,handleSelectedProduct}) => {
+  //  console.log(handleSelectedProduct); 
 
 //
   
     const {name,img,country,role,batting_style,price,rating}= posts;
     
     
+
+
+
    
     
     return (
@@ -69,16 +73,17 @@ const Cart = ({posts}) => {
 
 
        
-   <section className=' '>   
+   
        <div className=" card  bg-base-100  shadow-xl cart ">
   <figure>
   <img className=' w-96 h-64' src={img} alt={`hi${name}`} />
+ 
    
   </figure>
   <div className="card-body ">
     <div className=" flex gap-7 "><h2><img className='w-10' src="https://img.icons8.com/?size=100&id=23264&format=png&color=000000" alt="" /></h2>    <h2 className="card-title">
     {name}
-      
+    
     
     </h2></div>
 
@@ -86,13 +91,16 @@ const Cart = ({posts}) => {
     <hr/>
     <p>Rating:</p>
     <br/>
-    <div> <h1 className='flex justify-between'>Left-Hand Bat:<h2>{batting_style}</h2></h1>
-    
-    <h2>Price:{price} </h2></div>
+    <div> <h1 className='flex justify-between'>Left-Hand Bat:<h2>{batting_style}</h2></h1> 
+    <br/>
+    <div className='flex justify-between'>
+    <h2>Price:{price} </h2> <button  onClick={() =>handleSelectedProduct (posts)} className="btn btn-active">Choose Player</button>
+    </div>
+    </div>
   
   </div>
 </div>
-</section>
+
 
   
 

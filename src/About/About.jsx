@@ -1,14 +1,27 @@
 
 
+import React from "react";
 
 
+export default function About({selectedProducts}){
 
-const About = () => {
     return (
-        <div>
-          <h1>ami tomake valo basfjsufgsssjhdfbflksdfuysdtkjsddnf <br/> lkhfuysdgfklsd"| kjbhfjhfgsdhfb shkjsgdf </h1>  
+      <>
+        <div className="bg-black w-72 h-36">
+
+          {
+          selectedProducts.map((product)=>(
+            <div key={product.id} className="text-white">
+               <img src={product.img} alt="" />
+                      <p>name:</p>
+                      <p>price </p>
+
+               </div>
+               
+            ))
+          }
         </div>
+        </>
     );
 };
 
-export default About;

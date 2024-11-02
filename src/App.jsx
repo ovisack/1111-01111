@@ -27,10 +27,36 @@ function App() {
   };
 
   console.log(isActive);
+const [selectedProducts,setSelectedProducts]=useState([]);
+
+
+const handleSelectedProduct = (product) =>{
+ const  isExist=selectedProducts.find((p)=>p.id== product.id);
+
+ if(isExist){
+  alert("already isExist")
+ }
+ else{
+  const newProducts=[...selectedProducts,product];
+  setSelectedProducts(newProducts);
+ }
+
+
+
+
+
+
+
+
+
+
+
+}
+   console.log(selectedProducts);
 
   return (
     <>
-      <Nave isActive={isActive} handleIsActiveState={handleIsActiveState} ></Nave>
+      <Nave selectedProducts={selectedProducts.length} isActive={isActive} handleIsActiveState={handleIsActiveState}  handleSelectedProduct={ handleSelectedProduct}  ></Nave>
 
       
       
