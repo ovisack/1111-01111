@@ -94,7 +94,7 @@ const Cart = ({posts,handleSelectedProduct}) => {
     <div> <h1 className='flex justify-between'>Left-Hand Bat:<h2>{batting_style}</h2></h1> 
     <br/>
     <div className='flex justify-between'>
-    <h2>Price:{price} </h2> <button  onClick={() =>handleSelectedProduct (posts)} className="btn btn-active">Choose Player</button>
+    <h2>Price:{price} </h2> <button  onClick={() =>handleSelectedProduct(posts)} className="btn btn-active">Choose Player</button>
     </div>
     </div>
   

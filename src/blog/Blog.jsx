@@ -17,7 +17,7 @@ const Blog = ({ handleSelectedProduct,selectedProducts }) => {
             <h3>name:{post.length}</h3>
       <div className="grid  md:grid-cols-3 md:gap-14 m-14 mt-28 ">
             {
-                post.map(posts=> <Cart selectedProducts={selectedProducts}  handleSelectedProduct={ handleSelectedProduct}   key={posts.id} posts={posts}></Cart>)
+                post.data?.map(posts=> <Cart selectedProducts={selectedProducts}  handleSelectedProduct={ handleSelectedProduct}   key={posts.id} posts={posts}></Cart>)
             }
             </div>
         </div>

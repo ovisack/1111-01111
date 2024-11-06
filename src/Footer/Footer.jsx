@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
          
       
-        <footer className="footer bg-neutral text-neutral-content h-96  md:mt-52 p-32">
+        <footer className="footer bg-neutral text-neutral-content h-96  md:mt-96 p-32">
            
 
             <nav className="">
