@@ -54,7 +54,7 @@ import './cart.css'
 
 
 
-const Cart = ({posts,handleSelectedProduct}) => {
+const Cart = ({posts,handleSelectedProduct,}) => {
   //  console.log(handleSelectedProduct); 
 
 //
@@ -74,7 +74,7 @@ const Cart = ({posts,handleSelectedProduct}) => {
 
        
    
-       <div className=" card  bg-base-100  shadow-xl cart ">
+       <div className=" card  bg-base-100  shadow-xl cart w-96 ">
   <figure>
   <img className=' w-96 h-64' src={img} alt={`hi${name}`} />
  

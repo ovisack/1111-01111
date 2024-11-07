@@ -105,18 +105,25 @@ function App() {
 
 
 
-  const [price,setPrice]=useState(5);
+  const [price,setPrice]=useState();
+ 
 
-
-  const handleIncreasePrice=(pr) =>{
-    setPrice(price+pr)
+  const handleIncreasePrice=(prices) =>{
+    setPrice(price+prices)
 
   }
   const handleDelatePrice=(id) =>{
     const product=selectedProducts.find((p)=>p.id==id);
-    setSelectedProducts(product.price-price) 
+    setSelectedProducts(product) 
 
   }
+  
+
+  const ClaimPrices= ()=>{
+    const newPrices=price+80000;
+    setPrice(newPrices)
+  }
+  
 
 
   const handleDelate=(id)=>{
@@ -147,8 +154,14 @@ function App() {
         handleSelectedProduct={handleSelectedProduct} 
         handleDelate={handleDelate}
         price={price}
+        ClaimPrices={ClaimPrices}
+        prices={price}
       />
-      <Footer />
+      <div className=' mt-[1500px]'>
+  <Footer  />
+
+      </div>
+    
     </>
   );
 }

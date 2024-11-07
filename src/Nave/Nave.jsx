@@ -100,9 +100,10 @@
 import './hero.css';
 import About from '../About/About';
 import Blog from '../blog/Blog';
-import { useState } from 'react';
 
-function Nave({ handleSelectedProduct, selectedProducts, handleIsActiveState, isActive,handleDelate,price }) {
+function Nave({ handleSelectedProduct, selectedProducts, handleIsActiveState, isActive,handleDelate,price,ClaimPrices }) {
+
+
   return (
     <>
       <div className='bg-slate-500 md:h-32 md:w-screen'>
@@ -112,7 +113,7 @@ function Nave({ handleSelectedProduct, selectedProducts, handleIsActiveState, is
           <h1 className='md:font-bold md:text-2xl'>Fixture</h1>
           <h1 className='md:font-bold md:text-2xl'>Teams</h1>
          
-          <span className='md:flex md:font-bold md:text-2xl'>Coin{price} <img className='md:w-7 h-7' src="https://img.icons8.com/?size=100&id=sPBQkuep9vDA&format=png&color=000000" alt="coin" /></span>
+          <span className='md:flex md:font-bold md:text-2xl'>Coin{price}<img className='md:w-7 h-7' src="https://img.icons8.com/?size=100&id=sPBQkuep9vDA&format=png&color=000000" alt="coin" /></span>
         </div>
       </div>
 
@@ -121,7 +122,7 @@ function Nave({ handleSelectedProduct, selectedProducts, handleIsActiveState, is
           <img className='md:ml-72' src="https://i.ibb.co.com/XWbvNW3/banner-main.png" alt="banner" />
           <h1 className='text-4xl font-bold text-gray-500'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
           <p className='font-bold text-2xl text-gray-500 md:ml-40'>Beyond Boundaries Beyond Limits</p>
-          <button className='bg-yellow-300 w-40 md:ml-64'>Claim Free Credit</button>
+          <button onClick={()=>ClaimPrices (price)} className='bg-yellow-300 w-40 h-16 mt-8 rounded-full md:ml-64'>Claim Free Credit</button>
         </div>
       </div>
 
@@ -145,6 +146,37 @@ function Nave({ handleSelectedProduct, selectedProducts, handleIsActiveState, is
 }
 
 export default Nave;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

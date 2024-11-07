@@ -14,8 +14,8 @@ const Blog = ({ handleSelectedProduct,selectedProducts }) => {
     },[])
     return (
         <div className=" flex  ">
-            <h3>name:{post.length}</h3>
-      <div className="grid  md:grid-cols-3 md:gap-14 m-14 mt-28 ">
+        
+      <div className="grid  md:grid-cols-3 md:gap-14 mt-5 m-14  ">
             {
                 post.data?.map(posts=> <Cart selectedProducts={selectedProducts}  handleSelectedProduct={ handleSelectedProduct}   key={posts.id} posts={posts}></Cart>)
             }

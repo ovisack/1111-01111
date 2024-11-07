@@ -18,6 +18,7 @@ export default function About({selectedProducts=[],handleDelate}){
           {selectedProducts.length> 0 ?(
             selectedProducts.map((product) =>(
               <div key={product.id}> {product.name|| "Product Name"}
+              <p>prices{product.price}</p>
               
               <div className=" flex " >
                 <img src={product.img} alt="" />
